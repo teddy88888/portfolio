@@ -1,0 +1,381 @@
+
+/* ================================
+   EXPERIENCE SECTION
+================================ */
+
+.experience-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 100%;
+  min-height: 1130px;
+  padding: 80px 120px;
+  gap: 48px;
+
+  background: #000000;
+  box-sizing: border-box;
+}
+
+/* HEADER */
+
+.experience-header {
+  display: flex;
+  align-items: center;
+
+  width: 100%;
+  max-width: 1200px;
+  height: 100px;
+}
+
+.experience-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 100%;
+  gap: 8px;
+}
+
+.experience-label {
+  margin: 0;
+
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 32px;
+
+  text-align: center;
+  color: #91ff02;
+}
+
+.experience-subtitle {
+  margin: 0;
+
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 60px;
+
+  text-align: center;
+  color: #fdfdfd;
+}
+
+/* TWO COLUMNS */
+
+.experience-content {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  align-items: start;
+
+  width: 100%;
+  max-width: 1200px;
+  gap: 80px;
+}
+
+/* EXPERIENCE ITEM */
+
+.experience-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 100%;
+  min-width: 0;
+
+  gap: 32px;
+}
+
+.experience-item-title {
+  margin: 0;
+
+  width: 100%;
+
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 38px;
+
+  text-align: center;
+  color: #fdfdfd;
+}
+
+/* PROFILE AVATAR */
+
+.experience-avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+
+  width: 80px;
+  height: 80px;
+
+  background: #0a0d12;
+  border-radius: 9999px;
+  overflow: hidden;
+}
+
+.experience-portrait {
+  width: 68px;
+  height: 90px;
+
+  object-fit: cover;
+  object-position: center;
+
+  transform: rotate(-1.45deg);
+}
+
+/* WORK EXPERIENCE ROWS */
+
+.experience-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+
+  width: 100%;
+  min-height: 46px;
+
+  gap: 12px;
+
+  border-bottom: 1px solid #252b37;
+  padding-bottom: 12px;
+
+  box-sizing: border-box;
+}
+
+.experience-check {
+  width: 32px;
+  height: 32px;
+
+  flex-shrink: 0;
+  color: #91ff02;
+}
+
+.experience-row-text {
+  margin: 0;
+
+  flex: 1;
+
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 34px;
+
+  color: #fdfdfd;
+}
+
+/* ANOTHER TALENT AVATAR */
+
+.education-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 80px;
+  height: 80px;
+
+  background: #27f00c;
+  border-radius: 9999px;
+  overflow: hidden;
+}
+
+.education-icon-image {
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+}
+
+/* EDUCATION ROWS */
+
+.education-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+
+  width: 100%;
+  min-height: 46px;
+
+  gap: 12px;
+
+  border-bottom: 1px solid #252b37;
+  padding-bottom: 12px;
+
+  box-sizing: border-box;
+}
+
+.education-row img.education-row-icon {
+  display: block;
+
+  width: 32px;
+  height: 32px;
+
+  min-width: 32px;
+  max-width: 32px;
+
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.education-row-text {
+  margin: 0;
+
+  flex: 1;
+
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 34px;
+
+  color: #a4a7ae;
+}
+
+/* HIRE ME BUTTON */
+
+.experience-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+
+  width: 240px;
+  height: 56px;
+
+  margin-top: 8px;
+  padding: 8px;
+  gap: 8px;
+
+  background: #91ff02;
+  box-shadow: 0px 4px 40px rgba(145, 255, 2, 0.4);
+  border-radius: 9999px;
+
+  text-decoration: none;
+  box-sizing: border-box;
+
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 30px;
+
+  color: #0a0d12;
+
+  transition: transform 0.2s ease;
+}
+
+.experience-button:hover {
+  transform: translateY(-3px);
+}
+
+.experience-button span {
+  color: #0a0d12;
+}
+
+/* TABLET */
+
+@media (max-width: 1200px) {
+  .experience-section {
+    padding: 80px 64px;
+  }
+
+  .experience-content {
+    gap: 48px;
+  }
+
+  .experience-item-title {
+    font-size: 24px;
+  }
+
+  .experience-row-text,
+  .education-row-text {
+    font-size: 18px;
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+  .experience-section {
+    min-height: auto;
+    padding: 64px 24px;
+    gap: 40px;
+  }
+
+  .experience-header {
+    height: auto;
+  }
+
+  .experience-subtitle {
+    font-size: 32px;
+    line-height: 42px;
+  }
+
+  .experience-label {
+    font-size: 16px;
+  }
+
+  .experience-content {
+    grid-template-columns: 1fr;
+    gap: 64px;
+  }
+
+  .experience-item {
+    width: 100%;
+    gap: 24px;
+  }
+
+  .experience-item-title {
+    font-size: 24px;
+    line-height: 34px;
+  }
+
+  .experience-row-text,
+  .education-row-text {
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  .experience-check {
+    width: 24px;
+    height: 24px;
+  }
+
+  .education-row img.education-row-icon {
+    width: 24px;
+    height: 24px;
+    min-width: 24px;
+    max-width: 24px;
+  }
+
+  .experience-button {
+    width: 220px;
+  }
+}
+
+/* SMALL MOBILE */
+
+@media (max-width: 480px) {
+  .experience-section {
+    padding: 56px 20px;
+  }
+
+  .experience-subtitle {
+    font-size: 28px;
+    line-height: 38px;
+  }
+
+  .experience-item-title {
+    font-size: 20px;
+  }
+
+  .experience-row-text,
+  .education-row-text {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}

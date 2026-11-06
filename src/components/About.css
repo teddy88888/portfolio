@@ -1,0 +1,316 @@
+/* ABOUT SECTION */
+
+.about-section {
+  position: relative;
+  isolation: isolate;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  max-width: 1440px;
+  min-height: 604px;
+
+  margin: 0 auto;
+  padding: 120px 128px;
+
+  gap: 64px;
+
+  background: #000000;
+  overflow: hidden;
+}
+
+/* ABOUT CONTENT */
+
+.about-content {
+  position: relative;
+  z-index: 1;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  width: 100%;
+
+  gap: 16px;
+}
+
+.about-title {
+  width: 100%;
+
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 32px;
+
+  text-align: center;
+
+  color: #91ff02;
+}
+
+/* ABOUT DETAILS */
+
+.about-details {
+  position: relative;
+  isolation: isolate;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 100%;
+  min-height: 184px;
+
+  gap: 4px;
+}
+
+.about-subtitle {
+  position: relative;
+  z-index: 2;
+
+  width: 100%;
+
+  margin: 0;
+
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 60px;
+
+  text-align: center;
+
+  color: #fdfdfd;
+}
+
+.about-description {
+  position: relative;
+  z-index: 3;
+
+  width: 100%;
+
+  margin: 0;
+
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 60px;
+
+  text-align: center;
+
+  color: #91ff02;
+}
+
+/* DECORATIVE IMAGES */
+
+.about-decoration {
+  position: absolute;
+
+  object-fit: contain;
+
+  pointer-events: none;
+}
+
+.about-decoration-one {
+  width: 238px;
+  height: 178px;
+
+  left: 40px;
+  top: -131px;
+
+  z-index: 0;
+}
+
+.about-decoration-two {
+  width: 250px;
+  height: 187px;
+
+  right: -40px;
+  top: -94px;
+
+  z-index: 1;
+}
+
+.about-decoration-three {
+  width: 117px;
+  height: 88px;
+
+  left: 660px;
+  top: 135px;
+
+  z-index: 4;
+}
+
+/* ABOUT TEXT */
+
+.about-text {
+  position: relative;
+  z-index: 1;
+
+  width: 996px;
+  max-width: 100%;
+
+  margin: 0;
+
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 34px;
+
+  text-align: center;
+
+  color: #a4a7ae;
+}
+
+/* GREEN SQUARE DECORATION */
+
+.about-square-group {
+  position: absolute;
+
+  left: 0;
+  bottom: 0;
+
+  width: 138px;
+  height: 92px;
+
+  transform: rotate(90deg);
+  transform-origin: bottom left;
+
+  z-index: 2;
+
+  pointer-events: none;
+}
+
+.about-square {
+  position: absolute;
+
+  width: 46px;
+  height: 46px;
+
+  background: #1d3300;
+}
+
+.about-square:nth-child(1) {
+  left: 0;
+  top: 0;
+}
+
+.about-square:nth-child(2) {
+  left: 46px;
+  top: 46px;
+}
+
+.about-square:nth-child(3) {
+  left: 0;
+  top: 92px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1200px) {
+  .about-section {
+    padding: 100px 64px;
+  }
+
+  .about-subtitle,
+  .about-description {
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  .about-decoration-one {
+    width: 180px;
+    height: auto;
+  }
+
+  .about-decoration-two {
+    width: 190px;
+    height: auto;
+    right: 0;
+  }
+
+  .about-decoration-three {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 900px) {
+  .about-section {
+    padding: 80px 32px;
+    gap: 48px;
+  }
+
+  .about-details {
+    min-height: 170px;
+  }
+
+  .about-subtitle,
+  .about-description {
+    font-size: 36px;
+    line-height: 46px;
+  }
+
+  .about-decoration-one {
+    width: 130px;
+    top: -80px;
+  }
+
+  .about-decoration-two {
+    width: 140px;
+    top: -60px;
+  }
+
+  .about-decoration-three {
+    width: 90px;
+    height: auto;
+    top: 120px;
+  }
+
+  .about-text {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
+@media (max-width: 560px) {
+  .about-section {
+    padding: 64px 20px;
+    gap: 32px;
+  }
+
+  .about-subtitle,
+  .about-description {
+    font-size: 28px;
+    line-height: 38px;
+  }
+
+  .about-details {
+    min-height: 150px;
+  }
+
+  .about-decoration-one {
+    width: 90px;
+    top: -50px;
+  }
+
+  .about-decoration-two {
+    width: 100px;
+    top: -40px;
+  }
+
+  .about-decoration-three {
+    width: 70px;
+    top: 100px;
+  }
+
+  .about-text {
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  .about-square-group {
+    transform: scale(0.65) rotate(90deg);
+  }
+}

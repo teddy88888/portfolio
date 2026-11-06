@@ -1,0 +1,224 @@
+/* FAQ Section */
+.faq-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 100vw;
+  max-width: 100vw;
+  margin-left: calc(50% - 50vw);
+
+  padding: 80px 128px;
+  gap: 64px;
+
+  background: #000000;
+  box-sizing: border-box;
+}
+
+/* FAQ Header */
+.faq-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+
+  width: 790px;
+  max-width: 100%;
+  text-align: center;
+}
+
+.faq-title {
+  margin: 0;
+  width: 100%;
+
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 32px;
+
+  text-align: center;
+  color: #91ff02;
+}
+
+.faq-subtitle {
+  margin: 0;
+  width: 100%;
+
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 60px;
+
+  text-align: center;
+  color: #fdfdfd;
+}
+
+/* FAQ Content */
+.faq-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 100%;
+  max-width: 1184px;
+  gap: 0;
+}
+
+/* FAQ Row */
+.faq-row {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  width: 100%;
+  padding: 40px 0;
+
+  border-bottom: 1px solid #252b37;
+  box-sizing: border-box;
+}
+
+.faq-row:first-child {
+  padding-top: 0;
+}
+
+.faq-row:last-child {
+  border-bottom: none;
+}
+
+/* FAQ Question */
+.faq-question {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  padding: 0 40px 0 0;
+  gap: 24px;
+
+  min-width: 0;
+  box-sizing: border-box;
+}
+
+.faq-question + .faq-question {
+  padding: 0 0 0 40px;
+  border-left: 1px solid #252b37;
+}
+
+/* Question Heading */
+.faq-question-heading {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+
+  width: 100%;
+  gap: 12px;
+}
+
+.faq-icon {
+  flex-shrink: 0;
+  color: #91ff02;
+}
+
+.faq-question-heading h3 {
+  margin: 0;
+
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+
+  color: #fdfdfd;
+}
+
+/* FAQ Answer */
+.faq-answer {
+  margin: 0;
+  width: 100%;
+
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 30px;
+
+  color: #a4a7ae;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .faq-section {
+    padding: 80px 48px;
+  }
+
+  .faq-subtitle {
+    font-size: 40px;
+    line-height: 52px;
+  }
+
+  .faq-question {
+    padding-right: 24px;
+  }
+
+  .faq-question + .faq-question {
+    padding-left: 24px;
+  }
+
+  .faq-question-heading h3 {
+    font-size: 20px;
+    line-height: 32px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .faq-section {
+    padding: 64px 24px;
+    gap: 40px;
+  }
+
+  .faq-subtitle {
+    font-size: 32px;
+    line-height: 42px;
+  }
+
+  .faq-row {
+    grid-template-columns: 1fr;
+    gap: 32px;
+
+    padding: 32px 0;
+  }
+
+  .faq-question {
+    padding: 0;
+  }
+
+  .faq-question + .faq-question {
+    padding: 32px 0 0;
+    border-left: none;
+    border-top: 1px solid #252b37;
+  }
+
+  .faq-question-heading h3 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .faq-answer {
+    font-size: 16px;
+    line-height: 28px;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .faq-section {
+    padding: 56px 16px;
+  }
+
+  .faq-subtitle {
+    font-size: 28px;
+    line-height: 38px;
+  }
+
+  .faq-question-heading h3 {
+    font-size: 18px;
+    line-height: 28px;
+  }
+}

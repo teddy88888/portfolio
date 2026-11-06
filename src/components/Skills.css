@@ -1,0 +1,256 @@
+
+.skills-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 58px;
+
+  width: 100%;
+  min-height: 664px;
+  padding: 80px 128px;
+
+  background: #000000;
+  box-sizing: border-box;
+}
+
+/* Left Content */
+
+.skills-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 58px;
+
+  width: 524px;
+  flex: 1;
+}
+
+.skills-header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+
+  width: 100%;
+}
+
+.skills-title {
+  margin: 0;
+
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 32px;
+
+  color: #91ff02;
+}
+
+.skills-subtitle {
+  margin: 0;
+
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 60px;
+
+  color: #fdfdfd;
+}
+
+/* Technology Icons */
+
+.skills-list {
+  display: grid;
+  grid-template-columns: repeat(4, 64px);
+  gap: 24px;
+
+  width: 440px;
+}
+
+.skill-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 64px;
+  height: 64px;
+  padding: 6.4px;
+
+  box-sizing: border-box;
+  border: 0.8px solid #252b37;
+  border-radius: 50%;
+}
+
+.tech-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 51.2px;
+  height: 51.2px;
+
+  background: #000000;
+  border-radius: 50%;
+}
+
+/* Skill Bars */
+
+.skill-bars {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  width: 602px;
+  flex: 0 0 602px;
+}
+
+.skill-bar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 24px;
+
+  width: 100%;
+  height: 64px;
+}
+
+.skill-bar-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  width: 467px;
+  height: 64px;
+
+  background: #252b37;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.skill-bar-label {
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  height: 64px;
+  padding: 8px 24px;
+
+  box-sizing: border-box;
+  background: #3a6601;
+  border-radius: 16px;
+
+  overflow: hidden;
+}
+
+.skill-bar-text {
+  position: relative;
+  z-index: 2;
+
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 32px;
+
+  color: #fdfdfd;
+  white-space: nowrap;
+}
+
+.skill-diagonal-lines {
+  position: absolute;
+  inset: 0;
+
+  opacity: 0.08;
+
+  background: repeating-linear-gradient(
+    115deg,
+    transparent,
+    transparent 14px,
+    #fdfdfd 15px,
+    transparent 16px
+  );
+}
+
+.skill-bar-track {
+  flex: 1;
+  height: 1px;
+
+  background: #252b37;
+}
+
+.skill-bar-percentage {
+  width: 49px;
+  flex-shrink: 0;
+
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 34px;
+
+  color: #ffffff;
+}
+
+/* Responsive */
+
+@media (max-width: 1200px) {
+  .skills-section {
+    padding: 80px 64px;
+    gap: 40px;
+  }
+
+  .skill-bars {
+    width: 50%;
+    flex: 1;
+  }
+
+  .skill-bar-content {
+    flex: 1;
+    min-width: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .skills-section {
+    flex-direction: column;
+    align-items: flex-start;
+
+    padding: 64px 24px;
+    gap: 48px;
+  }
+
+  .skills-content {
+    width: 100%;
+    gap: 40px;
+  }
+
+  .skills-subtitle {
+    font-size: 36px;
+    line-height: 44px;
+  }
+
+  .skills-list {
+    grid-template-columns: repeat(4, 64px);
+    width: 100%;
+    gap: 16px;
+  }
+
+  .skill-bars {
+    width: 100%;
+    flex: none;
+  }
+
+  .skill-bar {
+    gap: 12px;
+  }
+
+  .skill-bar-content {
+    width: auto;
+    flex: 1;
+  }
+
+  .skill-bar-label {
+    padding: 8px 16px;
+  }
+
+  .skill-bar-text {
+    font-size: 15px;
+  }
+}

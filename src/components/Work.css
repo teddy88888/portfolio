@@ -1,0 +1,290 @@
+
+.work-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 128px;
+  gap: 64px;
+
+  width: 100%;
+  background: #000000;
+  color: #fdfdfd;
+  font-family: "Red Hat Display", sans-serif;
+  overflow: hidden;
+}
+
+.work-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  text-align: center;
+}
+
+.work-label {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 32px;
+  color: #91ff02;
+}
+
+.work-title {
+  margin: 0;
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 60px;
+  color: #fdfdfd;
+}
+
+.work-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  width: 100%;
+  max-width: 1184px;
+}
+
+.work-timeline {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 1px;
+  background: #252b37;
+  transform: translateX(-50%);
+}
+
+.work-item {
+  position: relative;
+  z-index: 1;
+
+  display: flex;
+  align-items: center;
+  gap: 64px;
+
+  width: 100%;
+  min-height: 286px;
+}
+
+.work-item-reverse {
+  flex-direction: row-reverse;
+}
+
+.work-image-wrapper {
+  flex: 0 0 calc(50% - 32px);
+  height: 286px;
+  overflow: hidden;
+  border-radius: 12px;
+  background: #252b37;
+}
+
+.work-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.work-image-wrapper:hover .work-image {
+  transform: scale(1.04);
+}
+
+.work-project-info {
+  flex: 0 0 calc(50% - 32px);
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.work-number {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 48px;
+  height: 48px;
+
+  background: #000000;
+  border: 1px solid #252b37;
+  border-radius: 50%;
+
+  color: #91ff02;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.work-card {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  flex: 1;
+  min-width: 0;
+  min-height: 286px;
+
+  padding: 24px;
+  background: #000000;
+  border: 1px solid #252b37;
+  border-radius: 20px;
+}
+
+.work-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.work-card-heading {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.work-category {
+  color: #a4a7ae;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 28px;
+}
+
+.work-card h3 {
+  margin: 0;
+  color: #fdfdfd;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+}
+
+.work-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+
+  width: 40px;
+  height: 40px;
+
+  color: #91ff02;
+  border: 1px solid #252b37;
+  border-radius: 50%;
+
+  transition: all 0.3s ease;
+}
+
+.work-link:hover {
+  background: #91ff02;
+  color: #000000;
+}
+
+.work-description {
+  margin: 0;
+  color: #a4a7ae;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.work-technologies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.work-technologies span {
+  padding: 6px 12px;
+  border: 1px solid #252b37;
+  border-radius: 999px;
+
+  color: #91ff02;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+/* Tablet */
+@media (max-width: 1100px) {
+  .work-section {
+    padding: 80px 48px;
+  }
+
+  .work-item {
+    gap: 32px;
+  }
+
+  .work-project-info {
+    gap: 16px;
+  }
+
+  .work-card {
+    padding: 20px;
+  }
+
+  .work-image-wrapper {
+    height: 260px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .work-section {
+    padding: 64px 20px;
+    gap: 40px;
+  }
+
+  .work-title {
+    font-size: 32px;
+    line-height: 42px;
+  }
+
+  .work-content {
+    gap: 32px;
+  }
+
+  .work-timeline {
+    display: none;
+  }
+
+  .work-item,
+  .work-item-reverse {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 20px;
+  }
+
+  .work-image-wrapper {
+    flex: auto;
+    width: 100%;
+    height: 220px;
+  }
+
+  .work-project-info {
+    flex: auto;
+    width: 100%;
+    gap: 12px;
+  }
+
+  .work-number {
+    width: 40px;
+    height: 40px;
+    font-size: 14px;
+  }
+
+  .work-card {
+    min-height: auto;
+    padding: 20px;
+  }
+
+  .work-card h3 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .work-description {
+    font-size: 14px;
+    line-height: 26px;
+  }
+}

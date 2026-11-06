@@ -1,0 +1,264 @@
+
+
+/* Testimonials Section */
+.testimonials-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 100vw;
+  max-width: 100vw;
+  margin-left: calc(50% - 50vw);
+
+  padding: 80px 128px;
+  gap: 64px;
+
+  background: #000000;
+  box-sizing: border-box;
+}
+
+/* Header */
+.testimonials-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  width: 592px;
+  max-width: 100%;
+}
+
+.testimonials-title {
+  margin: 0;
+  width: 100%;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 32px;
+  text-align: center;
+  color: #91ff02;
+}
+
+.testimonials-subtitle {
+  margin: 0;
+  width: 100%;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 60px;
+  text-align: center;
+  color: #fdfdfd;
+}
+
+/* Content */
+.testimonials-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  width: 100%;
+  max-width: 1184px;
+}
+
+/* Testimonials List */
+.testimonials-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 35px 24px;
+  width: 100%;
+}
+
+/* Testimonial Card */
+.testimonial-card {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 24px;
+  gap: 12px;
+  min-height: 270px;
+  border: 1px solid #252b37;
+  border-radius: 20px;
+  background: #000000;
+}
+
+/* Testimonial Header */
+.testimonial-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+  min-height: 70px;
+}
+
+.testimonial-person {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 0;
+}
+
+.testimonial-person h3 {
+  margin: 0;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 34px;
+  color: #fdfdfd;
+}
+
+.testimonial-person p {
+  margin: 0;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 32px;
+  color: #a4a7ae;
+}
+
+.testimonial-company {
+  flex-shrink: 0;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+/* Rating */
+.testimonial-rating {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0;
+  height: 32px;
+}
+
+/* Message */
+.testimonial-message {
+  margin: 0;
+  width: 100%;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 32px;
+  color: #fdfdfd;
+}
+
+/* Navigation */
+.testimonials-navigation {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+}
+
+.testimonial-nav-button {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 56px;
+  height: 56px;
+  padding: 8px;
+  border: 1px solid #252b37;
+  border-radius: 9999px;
+  background: transparent;
+  color: #252b37;
+  cursor: pointer;
+  transition:
+    color 0.2s ease,
+    border-color 0.2s ease,
+    background 0.2s ease;
+}
+
+.testimonial-nav-button:hover {
+  border-color: #91ff02;
+  color: #91ff02;
+}
+
+.testimonial-nav-next {
+  color: #91ff02;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .testimonials-section {
+    padding: 80px 48px;
+  }
+
+  .testimonials-subtitle {
+    font-size: 40px;
+    line-height: 52px;
+  }
+
+  .testimonials-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .testimonial-card {
+    padding: 20px;
+  }
+
+  .testimonial-company {
+    font-size: 16px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .testimonials-section {
+    padding: 64px 24px;
+    gap: 40px;
+  }
+
+  .testimonials-subtitle {
+    font-size: 32px;
+    line-height: 42px;
+  }
+
+  .testimonials-list {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .testimonial-card {
+    min-height: auto;
+  }
+
+  .testimonial-person h3 {
+    font-size: 18px;
+  }
+
+  .testimonial-person p {
+    font-size: 16px;
+  }
+
+  .testimonial-message {
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  .testimonial-rating svg {
+    width: 26px;
+    height: 26px;
+  }
+}
+
+@media (max-width: 480px) {
+  .testimonials-section {
+    padding: 56px 16px;
+  }
+
+  .testimonials-subtitle {
+    font-size: 28px;
+    line-height: 38px;
+  }
+
+  .testimonial-header {
+    align-items: flex-start;
+  }
+
+  .testimonial-company {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,861 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;600;700;800;900&display=swap");
+/* =========================
+   GLOBAL
+========================= */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  background: #000000;
+  color: #fdfdfd;
+
+  font-family: 'Red Hat Display', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+  box-sizing: border-box;
+
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: 100%;
+  max-width: 1440px;
+  height: 80px;
+
+  padding: 0 128px;
+
+  display: flex;
+  align-items: center;
+
+  border-bottom: 1px solid #252b37;
+
+  background: transparent;
+
+  z-index: 10;
+}
+
+.navbar-container {
+  display: flex;
+  flex-direction: row;
+  align-items: right-center;
+  justify-content: space-between;
+
+  width: 100%;
+  max-width: 1184px;
+  height: 50px;
+
+  margin: 0 auto;
+}
+
+/* Logo */
+
+.navbar-logo {
+  display: flex;
+  align-items: right-center;
+
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 28px;
+  font-weight: 800;
+
+  color: #fdfdfd;
+  text-decoration: none;
+}
+
+.navbar-logo span {
+  color: #91ff02;
+}
+
+/* Navigation Menu */
+
+.navbar-menu {
+  display: flex;
+  flex-direction: row;
+  align-items: right-center;
+  justify-content: flex-end;
+
+  gap: 32px;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 8px;
+
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+
+  color: #ffffff;
+  text-decoration: none;
+
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #91ff02;
+}
+
+.nav-link.active {
+  color: #91ff02;
+  font-weight: 700;
+}
+
+/* Contact Button */
+
+.navbar-contact {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+
+  color: #ffffff;
+  text-decoration: none;
+
+  transition: color 0.3s ease;
+}
+
+.navbar-contact span {
+  font-size: 24px;
+}
+
+.navbar-contact:hover {
+  color: #91ff02;
+}
+
+.nav-line {
+  display: inline-block;
+  width: 50px;
+  height: 1px;
+  background-color: #e2ebd8;
+  vertical-align: middle;
+  margin-right: 12px;
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero-section {
+  position: relative;
+
+  width: 100%;
+  max-width: 1440px;
+
+  min-height: 1024px;
+
+  margin: 0 auto;
+
+  background: #000000;
+
+  color: #fdfdfd;
+
+  overflow: hidden;
+}
+
+.hero-container {
+  position: relative;
+
+  width: 100%;
+  min-height: 1024px;
+
+  margin: 0 auto;
+
+  padding: 0 128px;
+}
+
+/* =========================
+   HERO CONTENT LEFT
+========================= */
+
+.hero-content {
+  position: relative;
+
+  width: 807px;
+
+  padding-top: 221px;
+
+  z-index: 4;
+}
+
+/* Label */
+
+.hero-label {
+  display: flex;
+  align-items: center;
+
+  gap: 20px;
+
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+
+  letter-spacing: 1px;
+
+  color: #f8f5f5;
+}
+
+.hero-label-dot {
+  width: 13px;
+  height: 13px;
+
+  flex-shrink: 0;
+
+  border-radius: 50%;
+
+  background: #91ff02;
+
+  box-shadow: 0 0 12px #91ff02;
+}
+
+.greeting-line {
+  display: inline-block;
+  width: 120px;
+  height: 1px;
+  background-color: #e7eae4;
+  vertical-align: middle;
+  margin-right: 12px;
+}
+
+/* Hero Title */
+
+.hero-title {
+  margin: 24px 0 0;
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 65px;
+  font-weight: 800;
+  line-height: 1.12;
+  letter-spacing: -2px;
+  color: #fdfdfd;
+}
+
+.hero-title span {
+  color: #91ff02;
+}
+
+.hero-description {
+  margin: 28px 0 0;
+  font-size: 20px;
+  line-height: 1.7;
+  color: #b8b8b8;
+}
+
+.hero-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  width: 300px;
+  height: 56px;
+  margin-top: 36px;
+  border-radius: 999px;
+  background: #91ff02;
+  color: #000;
+  font-size: 18px;
+  font-weight: 700;
+  box-shadow: 0 0 24px rgba(145, 255, 2, 0.25);
+  transition: transform 0.2s ease;
+}
+
+.hero-button:hover {
+  transform: translateY(-3px);
+}
+
+.hero-socials {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-top: 56px;
+  color: #b8b8b8;
+  font-size: 16px;
+}
+
+.hero-socials a {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.hero-socials a:hover {
+  color: #91ff02;
+}
+
+.social-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border: 1px solid #777;
+  border-radius: 50%;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.social-x {
+  font-size: 24px;
+}
+
+.social-divider {
+  width: 1px;
+  height: 24px;
+  background: #3a3a3a;
+}
+
+/* PROFILE IMAGE */
+
+.hero-green-bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 316px;
+  height: 0px;
+  background: #91ff02;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.hero-profile {
+  position: absolute;
+  top: 0;
+  right: 2px;
+  width: 600px;
+  height: 800px;
+  z-index: 2;
+}
+
+.profile-green-background {
+  display: none;
+}
+
+.profile-image {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: bottom center;
+  background: linear-gradient(to bottom, rgba(222, 204, 204, 0.5) transparent);
+  filter: grayscale(100%) brightness(0.4) contrast(1.1) ;
+
+  z-index: 2;
+}
+
+.hero-profile::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  background: linear-gradient(
+    to right,
+    transparent 0%,
+    transparent 53%,
+    rgba(145, 255, 2, 0.65) 52%,
+    rgba(145, 255, 2, 0.65) 100%
+  );
+
+  mix-blend-mode: color;
+  pointer-events: none;
+  z-index: 3;
+}
+
+.profile-gradient {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 220px;
+  background: linear-gradient(
+    to top,
+    rgba(6, 0, 0, 1),
+    transparent
+  );
+  z-index: 3;
+  pointer-events: none;
+}
+
+/* RATING CARD */
+
+.rating-card {
+  position: absolute;
+  right: 170px;
+  bottom: 86px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  width: 323px;
+  padding: 28px 20px;
+  border: 1px solid #252b37;
+  border-radius: 20px;
+  background: #000000;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.35);
+  z-index: 5;
+}
+.rating-number {
+  font-size: 38px;
+  font-weight: 800;
+  line-height: 1;
+  color: #fff;
+}
+
+.rating-stars {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.rating-card p {
+  margin: 4px 0 0;
+  font-size: 14px;
+  color: #bdbdbd;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1200px) {
+  .hero-container {
+    padding: 0 64px;
+  }
+
+  .hero-content {
+    width: 60%;
+  }
+
+  .hero-title {
+    font-size: 64px;
+  }
+
+  .hero-profile {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  width: 660px;
+  height: 874px;
+
+  z-index: 2;
+}
+
+  .hero-green-bg {
+  left: auto;
+  right: 0;
+  width: 48%;
+}
+}
+
+@media (max-width: 900px) {
+  .hero-section,
+  .hero-container {
+    min-height: 900px;
+  }
+
+  .hero-container {
+    padding: 0 32px;
+  }
+
+  .hero-content {
+    width: 100%;
+    padding-top: 100px;
+  }
+
+  .hero-title {
+    font-size: clamp(48px, 9vw, 68px);
+  }
+
+  .hero-description {
+    font-size: 17px;
+  }
+
+  .hero-profile {
+    top: 430px;
+    right: 0;
+    width: 60%;
+    height: 470px;
+  }
+
+  .hero-green-bg {
+    top: 430px;
+    width: 60%;
+    height: 470px;
+  }
+
+  .rating-card {
+    left: -32px;
+    bottom: 30px;
+    min-width: 220px;
+    padding: 18px;
+  }
+
+  .rating-number {
+    font-size: 30px;
+  }
+
+  .rating-stars svg {
+    width: 22px;
+    height: 22px;
+  }
+
+  .hero-socials {
+    gap: 14px;
+    margin-top: 32px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 560px) {
+  .hero-section,
+  .hero-container {
+    min-height: 850px;
+  }
+
+  .hero-container {
+    padding: 0 20px;
+  }
+
+  .hero-content {
+    padding-top: 80px;
+  }
+
+  .hero-label {
+    gap: 12px;
+    font-size: 13px;
+    letter-spacing: 2px;
+  }
+
+  .hero-title {
+    margin-top: 18px;
+    font-size: 46px;
+    letter-spacing: -1px;
+  }
+
+  .hero-description {
+    margin-top: 20px;
+    font-size: 15px;
+  }
+
+  .hero-button {
+    width: 230px;
+    height: 52px;
+    margin-top: 24px;
+    font-size: 16px;
+  }
+
+  .hero-socials {
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 28px;
+    font-size: 13px;
+  }
+
+  .social-divider {
+    height: 18px;
+  }
+
+  .hero-profile {
+    top: 470px;
+    right: 0;
+    width: 78%;
+    height: 380px;
+  }
+
+  .hero-green-bg {
+    top: 470px;
+    width: 78%;
+    height: 380px;
+  }
+
+  .rating-card {
+    left: -20px;
+    bottom: 20px;
+    min-width: 185px;
+    padding: 14px;
+    gap: 6px;
+  }
+
+  .rating-number {
+    font-size: 26px;
+  }
+
+  .rating-stars svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .rating-card p {
+    font-size: 12px;
+  }
+}
+
+/* SERVICES SECTION */
+
+.services-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  width: 100%;
+  max-width: 1440px;
+  min-height: 770px;
+
+  margin: 0 auto;
+  padding: 60px;
+
+  gap: 64px;
+
+  background: #000000;
+}
+
+/* SERVICES HEADER */
+
+.services-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100%;
+  min-height: 160px;
+
+  gap: 121px;
+}
+
+.services-title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  width: 509px;
+
+  gap: 8px;
+}
+
+.services-label {
+  width: 100%;
+
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 32px;
+
+  color: #91ff02;
+}
+
+.services-heading {
+  width: 100%;
+
+  margin: 0;
+
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 60px;
+
+  color: #fdfdfd;
+}
+
+.services-text {
+  width: 504px;
+
+  margin: 0;
+
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 34px;
+
+  text-align: right;
+
+  color: #a4a7ae;
+}
+
+/* SERVICES CARDS */
+
+.services-cards {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  width: 100%;
+
+  gap: 40px;
+}
+
+.service-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  flex: 1;
+  min-width: 0;
+
+  gap: 24px;
+}
+
+.service-number {
+  width: 100%;
+
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 34px;
+
+  color: #a4a7ae;
+}
+
+.service-line {
+  width: 100%;
+  height: 1px;
+
+  background: #252b37;
+}
+
+.service-icon {
+  flex-shrink: 0;
+
+  color: #91ff02;
+}
+
+.service-card-title {
+  width: 100%;
+
+  margin: 0;
+
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 38px;
+
+  color: #ffffff;
+}
+
+.service-card-description {
+  width: 100%;
+
+  margin: 0;
+
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 34px;
+
+  color: #a4a7ae;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1200px) {
+  .services-section {
+    padding: 80px 64px;
+  }
+
+  .services-header {
+    gap: 48px;
+  }
+
+  .services-title {
+    width: 50%;
+  }
+
+  .services-text {
+    width: 50%;
+  }
+
+  .services-heading {
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  .services-cards {
+    gap: 24px;
+  }
+
+  .service-card-title {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .service-card-description {
+    font-size: 17px;
+    line-height: 28px;
+  }
+}
+
+@media (max-width: 900px) {
+  .services-section {
+    padding: 80px 32px;
+    gap: 48px;
+  }
+
+  .services-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+  }
+
+  .services-title,
+  .services-text {
+    width: 100%;
+  }
+
+  .services-text {
+    text-align: left;
+  }
+
+  .services-cards {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .service-card {
+    width: 100%;
+  }
+}
+
+@media (max-width: 560px) {
+  .services-section {
+    padding: 64px 20px;
+  }
+
+  .services-heading {
+    font-size: 36px;
+    line-height: 44px;
+  }
+
+  .services-text {
+    font-size: 17px;
+    line-height: 28px;
+  }
+
+  .service-card-title {
+    font-size: 24px;
+  }
+}
