@@ -70,7 +70,7 @@ function Experience() {
           ))}
 
           <a href="#contact" className="experience-button">
-            <span>HIRE ME</span>            
+            <span>HIRE ME</span>
           </a>
         </div>
       </div>
