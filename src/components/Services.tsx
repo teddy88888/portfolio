@@ -1,8 +1,4 @@
-import {
-  Monitor,
-  Code2,
-  Smartphone,
-} from "lucide-react";
+import { Monitor } from "lucide-react";
 
 const services = [
   {
