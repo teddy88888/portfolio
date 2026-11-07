@@ -1,4 +1,3 @@
-import { Mail } from "lucide-react";
 import "./Experience.css";
 
 const workExperience = [
@@ -42,7 +41,7 @@ function Experience() {
             />
           </div>
 
-          {workExperience.map((item, index) => (
+          {workExperience.map((item) => (
             <div className="experience-row" key={item}>
               <img src="/itemicon.png" alt="" className="experience-check" />
               <p className="experience-row-text">{item}</p>

@@ -1,13 +1,3 @@
-import {
-  Code2,
-  Globe,
-  Smartphone,
-  Database,
-  GitBranch,
-  Layers,
-  Monitor,
-  Palette,
-} from "lucide-react";
 import "./Skills.css";
 
 const technologies = [
